@@ -1,0 +1,31 @@
+﻿create database Sınıf_Listesi
+go
+
+use TelefonRehberi
+
+go
+
+create table Kullanıcı_Bilgileri
+(
+id int not null,
+KullaniciAdi nvarchar(50) not null,
+Sifre nvarchar (50) not null
+)
+
+insert into Kullanici (id, KullaniciAdi, Sifre) values (newid(), 'iremerbas', '123');
+insert into Kullanici (id, KullaniciAdi, Sifre) values (newid(), 'semacan', '123');
+insert into Kullanici (id, KullaniciAdi, Sifre) values (newid(), 'suhedaguven', '123');
+
+create table Liste
+(
+id int not null,
+No nvarchar(50) not null,
+Adı_Soyadı nvarchar(50) not null,
+Sınıfı nvarchar(50) not null,
+Cinsiyet nvarchar(50) not null,
+Quiz1 nvarchar(10) not null,
+Quiz2 nvarchar(10) not null,
+Vize nvarchar(10) not null,
+Proje nvarchar(10) not null,
+Final nvarchar(10) not null,
+)
